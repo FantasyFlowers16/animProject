@@ -27,11 +27,12 @@ export default class PageIndex extends Vue {
 .b-main
   background $bgMain
   width 100%
-  height calc(100vh - 50px)
+  height 100vh
   z-index 10
   &__hide-text-container
-    text-decoration none 
+    text-decoration none
   &__hide-text
+    position absolute
     width 100%
     display flex
     align-items center
@@ -50,7 +51,7 @@ export default class PageIndex extends Vue {
       transition opacity 3.6s ease,transform .6s ease
   &__button-container
     width 100%
-    height calc(100% - 50px)
+    height 100%
     display flex
     align-items center
     justify-content center
